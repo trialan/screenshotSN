@@ -8,7 +8,11 @@ Thomas listened to these podcasts, watched this movie, and did research on
 asteroid mining."
 
 ## Cost analysis
-10 requests led to 10152 input tokens and 2624 output tokens, this means it
-costs 9 cents per screenshot analysed. This means it costs about $40/day to do
+10 requests with `detail="auto"` led to 10152 input tokens and 2624 output tokens, this means it
+costs 0.9 cents per screenshot analysed. This means it costs about $4/day to do
 this, which is currently too cost prohibitive. Once costs are down by a factor
-of 100x this could be a viable idea.
+of 10x this would be a viable idea assuming you can charge $20/month. Setting
+`detail="low"` leads to estimated cost of 0.5 cents/request, i.e. $2.5/day at
+8hrs of daily usage, however this setting renders it useless as it gets the
+answers wrong.
+
